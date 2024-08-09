@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+<p>Api Data Fetch</p>
+<hr>
+<%= stylesheet_link_tag ("index")%>
+<div class="cards-container">
+  <% @posts.each do |post| %>
+    <div class="card">
+      <h2><%= post["title"] %></h2>
+      <p><%= post["body"] %></p>
+    </div>
+  <% end %>
+</div>
